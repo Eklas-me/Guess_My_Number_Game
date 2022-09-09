@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Press Start 2P", cursive;
+  overflow: hidden;
+  background-color: #6d949c;
+  color: #444;
+}
+
+.play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.play h2 {
+  font-size: 5rem;
+  background: #045c5c;
+  padding: 3rem;
+  border-radius: 8px;
+  color: #eaeaea;
+  cursor: pointer;
+}
+.play h2 i {
+  font-size: 6rem;
+  color: #acfc69;
+}
+.game-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 80vw;
+  height: 80vh;
+  background: #245454;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  opacity: 0;
+  visibility: hidden;
+}
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  color: #eaeaea;
+}
+.btn {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #acfc69;
+}
+.guess-Num {
+  margin-top: 2rem;
+}
+
+h3.guess-the-number {
+  color: #eaeaea;
+  /* color: #acfc69; */
+  font-size: 6rem;
+  text-align: center;
+}
+.guess-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 450px;
+  margin: 0.5rem auto;
+  padding-bottom: 52px;
+}
+input.guess-input {
+  height: 3rem;
+  outline: none;
+  border: 1px solid #045c5c;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 3rem;
+  padding: 4px 0;
+}
+button.btn.check-btn {
+  width: 10rem;
+  align-self: center;
+  margin-top: 1.5rem;
+}
+.game-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: flex-end;
+}
+.score {
+  margin-bottom: 1.3rem;
+}
+p.start_guess {
+  color: #eaeaea;
+  text-align: center;
+  font-size: 10px;
+  margin-top: 18px;
+}

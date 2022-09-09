@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="game-body">
+      <div class="play">
+        <h2>Play <i class="fa-solid fa-gamepad"></i></h2>
+        <audio
+          id="audio"
+          src="./game-sound/mixkit-arcade-game-opener-222.wav"
+        ></audio>
+      </div>
+      <div class="game-screen">
+        <div class="game-header">
+          <div class="herder-left">
+            <p class="score">High Score: <span class="high_score"></span></p>
+            <p class="score">Score: <span class="total_score"></span></p>
+          </div>
+          <div class="herder-right">
+            <p>Guess The Number 1 Of 20</p>
+          </div>
+        </div>
+        <div class="guess-Num">
+          <h3 class="guess-the-number">?</h3>
+          <audio
+            id="audio3"
+            src="./game-sound/mixkit-video-game-bomb-alert-2803.wav"
+          ></audio>
+          <p class="start_guess">Start Guessing.....</p>
+        </div>
+        <div class="guess-box">
+          <input class="guess-input" type="text" />
+          <button class="btn check-btn">Check</button>
+          <audio
+            id="audio2"
+            src="./game-sound/mixkit-arcade-bonus-229.wav"
+          ></audio>
+        </div>
+        <div class="game-footer">
+          <div class="exit">
+            <button class="btn exit_btn">Exit</button>
+            <audio
+              id="audio4"
+              src="./game-sound/mixkit-video-game-lock-2851.wav"
+            ></audio>
+          </div>
+          <div class="result">
+            <button class="btn play-again">
+              Play again <i class="fa-solid fa-gamepad"></i>
+            </button>
+            <audio
+              id="audio5"
+              src="./game-sound/mixkit-electronic-lock-success-beeps-2852.wav"
+            ></audio>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
